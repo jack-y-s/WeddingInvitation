@@ -31,7 +31,9 @@
               "olive": "#556B2F",
               "dusty-pink": "#D8BFD8",
               "charcoal": "#AC34B3",
-              "cream": "#F5F5DC"
+              "cream": "#F5F5DC",
+	      "gold": "#FDBE02",
+	      "dark-gold": "#E6AB00"
             },
             fontFamily: {
               "display": ["Plus Jakarta Sans", "sans-serif"],
@@ -44,97 +46,103 @@
     </script>
 </head>
 <body class="bg-cream dark:bg-background-dark font-display text-charcoal dark:text-cream">
-<div class="flex min-h-[600px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4" data-alt="A romantic, soft-focus photo of a happy couple in a natural setting." style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("bg_olive_flower2.png");'>
+<div class="flex min-h-screen flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4 sm:min-h-[600px] sm:p-6 md:min-h-[800px] md:p-8"
+     data-alt="Background image"
+     style="background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url('bg_cream_flower.png');">
 <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
 <div class="layout-container flex h-full grow flex-col">
 <div class="flex flex-1 justify-center">
 <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
 <div class="@container">
 <div class="@[480px]:p-4">
-<div class="flex min-h-[600px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4" data-alt="A romantic, soft-focus photo of a happy couple in a natural setting." style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("masjid_bw.png");'>
-<div class="flex flex-col gap-2 text-center">
-<h1 class="text-olive text-5xl font-serif font-bold leading-tight tracking-[-0.033em] @[480px]:text-7xl">
-                                        Yan &amp; Jack
-                                    </h1>
-<h2 class="text-olive text-lg font-normal leading-normal @[480px]:text-xl">
-                                        Are getting married on December 26, 2025
-                                    </h2>
-</div>
-</a>
-</div>
-</div>
+<div class="flex h-400px w-full items-center justify-center">
+<div class="w-[400px] h-[400px] rounded-full bg-cover bg-center bg-no-repeat flex items-center justify-center text-center"
+       style="background-image: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%), url('masjid.jpg');" 
+       data-alt="Cyberjaya mosque">
+    
+<div class="flex flex-col gap-2 text-white p-4">
+      <h1 class="text-dark-gold text-5xl font-serif font-bold leading-tight tracking-[-0.033em] @[480px]:text-7xl">
+        Yan &amp; Jack
+      </h1>
+      <h2 class="text-dark-gold text-lg font-normal leading-normal @[480px]:text-xl">
+        akan bernikah pada 26 Disember, 2025
+      </h2>
+    </div>
+  </div>
 </div>
 <div class="py-10">
-<p class="text-charcoal dark:text-cream/90 text-lg font-normal leading-relaxed pb-3 pt-1 px-4 text-center max-w-3xl mx-auto">
-                            Join us as we celebrate our special day at the beautiful Meadowlark Gardens. We are so excited to share this moment with our dearest family and friends and look forward to creating unforgettable memories together.
-                        </p>
+<p class="text-gold dark:text-cream/90 text-6xl font-normal leading-relaxed pb-3 pt-1 px-4 text-center max-w-3xl mx-auto">السلام عليكم</p>
+<p class="text-black dark:text-cream/90 text-lg font-normal leading-relaxed pb-3 pt-1 px-4 text-center max-w-3xl mx-auto">Dengan sukacitanya, kami ingin menjemput anda ke majlis pernikahan kami. Kehadiran dan doa anda adalah penyeri majlis kami.</p>
 </div>
 <div class="px-4 py-8">
-<h2 class="text-olive dark:text-dusty-pink text-4xl font-serif font-bold leading-tight tracking-[-0.015em] pb-8 pt-5 text-center">Event Details</h2>
+<h2 class="text-gold dark:text-dusty-pink text-3xl font-serif font-bold leading-tight tracking-[-0.015em] pb-8 pt-5 text-center">Butiran Acara</h2>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
 <div class="flex flex-col justify-center space-y-6">
-<div class="bg-white/60 dark:bg-black/20 p-6 rounded-lg shadow-sm">
+<div class="bg-white/70 dark:bg-black/20 p-6 rounded-lg shadow-sm">
 <div class="flex items-center gap-3 mb-2">
-<span class="material-symbols-outlined text-olive dark:text-dusty-pink">calendar_month</span>
-<h4 class="text-charcoal dark:text-cream/90 text-lg font-bold">Date</h4>
+<span class="material-symbols-outlined text-dark-gold dark:text-dusty-pink">calendar_month</span>
+<h4 class="text-dark-gold dark:text-cream/90 text-lg font-bold">Tarikh</h4>
 </div>
-<p class="text-olive dark:text-dusty-pink/80">Friday, December 26, 2025</p>
+<p class="text-black dark:text-dusty-pink/80">Jumaat, 26 Disember 2025.</p>
 </div>
-<div class="bg-white/60 dark:bg-black/20 p-6 rounded-lg shadow-sm">
+<div class="bg-white/70 dark:bg-black/20 p-6 rounded-lg shadow-sm">
 <div class="flex items-center gap-3 mb-2">
-<span class="material-symbols-outlined text-olive dark:text-dusty-pink">schedule</span>
-<h4 class="text-charcoal dark:text-cream/90 text-lg font-bold">Time</h4>
+<span class="material-symbols-outlined text-dark-gold dark:text-dusty-pink">schedule</span>
+<h4 class="text-dark-gold dark:text-cream/90 text-lg font-bold">Masa</h4>
 </div>
-<p class="text-olive dark:text-dusty-pink/80">Solemnization begins at 3:00 PM</p>
+<p class="text-black dark:text-dusty-pink/80">3.00 petang - 6.00 petang.</p>
 </div>
-<div class="bg-white/60 dark:bg-black/20 p-6 rounded-lg shadow-sm">
+<div class="bg-white/70 dark:bg-black/20 p-6 rounded-lg shadow-sm">
 <div class="flex items-center gap-3 mb-2">
-<span class="material-symbols-outlined text-olive dark:text-dusty-pink">location_on</span>
-<h4 class="text-charcoal dark:text-cream/90 text-lg font-bold">Venue</h4>
+<span class="material-symbols-outlined text-dark-gold dark:text-dusty-pink">location_on</span>
+<h4 class="text-dark-gold dark:text-cream/90 text-lg font-bold">Tempat</h4>
 </div>
-<p class="text-olive dark:text-dusty-pink/80">Masjid Raja Haji Fisabillah</p>
-<p class="text-olive dark:text-dusty-pink/80">123 Blossom Lane, Cyberjaya, FL</p>
+<p class="text-black dark:text-dusty-pink/100">Masjid Raja Haji Fi Sabilillah</p>
+<p class="text-black dark:text-dusty-pink/80">Persiaran Semarak Api, Cyberjaya, Selangor.</p>
+<div class="w-[50px] h-[50px] bg-cover bg-center bg-no-repeat flex items-center justify-center text-center"
+       style="background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url('qr.png');" 
+       data-alt="waze qr">
+</div>
 </div>
 </div>
 <div>
-<h3 class="text-charcoal dark:text-cream/90 text-2xl font-serif font-bold leading-tight tracking-[-0.015em] px-4 pb-4 pt-5 text-center md:text-left">Schedule of Events</h3>
+<h3 class="text-gold dark:text-dusty-pink text-3xl font-serif font-bold leading-tight tracking-[-0.015em] pb-8 pt-5 text-center">Jadual Acara</h3>
+<div class="bg-white/70 dark:bg-black/20 p-6 rounded-lg shadow-sm">
 <div class="grid grid-cols-[40px_1fr] gap-x-2 px-4">
 <div class="flex flex-col items-center gap-1 pt-3">
-<span class="material-symbols-outlined text-olive dark:text-dusty-pink">handshake</span>
+<span class="material-symbols-outlined text-dark-gold dark:text-dusty-pink">handshake</span>
 <div class="w-[1.5px] bg-dusty-pink h-4 grow"></div>
 </div>
 <div class="flex flex-1 flex-col py-3">
-<p class="text-charcoal dark:text-cream/90 text-base font-medium leading-normal">Solemnization</p>
-<p class="text-olive dark:text-dusty-pink/80 text-base font-normal leading-normal">3:00 PM</p>
+<p class="text-dark-gold dark:text-cream/90 text-base font-medium leading-normal">Pernikahan</p>
+<p class="text-black dark:text-dusty-pink/80 text-base font-normal leading-normal">3:00 PM</p>
 </div>
 <div class="flex flex-col items-center gap-1">
 <div class="w-[1.5px] bg-dusty-pink h-4"></div>
-<span class="material-symbols-outlined text-olive dark:text-dusty-pink">local_cafe</span>
+<span class="material-symbols-outlined text-dark-gold dark:text-dusty-pink">local_cafe</span>
 <div class="w-[1.5px] bg-dusty-pink h-4 grow"></div>
 </div>
 <div class="flex flex-1 flex-col py-3">
-<p class="text-charcoal dark:text-cream/90 text-base font-medium leading-normal">High Tea</p>
-<p class="text-olive dark:text-dusty-pink/80 text-base font-normal leading-normal">4:00 PM</p>
+<p class="text-dark-gold dark:text-cream/90 text-base font-medium leading-normal">Minum Petang</p>
+<p class="text-black dark:text-dusty-pink/80 text-base font-normal leading-normal">4:00 PM</p>
 </div>
 <div class="flex flex-col items-center gap-1 pb-3">
 <div class="w-[1.5px] bg-dusty-pink h-4"></div>
-<span class="material-symbols-outlined text-olive dark:text-dusty-pink">home</span>
+<span class="material-symbols-outlined text-dark-gold dark:text-dusty-pink">home</span>
 </div>
 <div class="flex flex-1 flex-col py-3">
-<p class="text-charcoal dark:text-cream/90 text-base font-medium leading-normal">Home</p>
-<p class="text-olive dark:text-dusty-pink/80 text-base font-normal leading-normal">6:00 PM</p>
+<p class="text-dark-gold dark:text-cream/90 text-base font-medium leading-normal">Bersurai</p>
+<p class="text-black dark:text-dusty-pink/80 text-base font-normal leading-normal">6:00 PM</p>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="bg-dusty-pink/20 dark:bg-black/20 py-16 px-4 my-8 rounded-lg" id="rsvp">
+<div class="bg-white/70 dark:bg-black/20 py-16 px-4 my-8 rounded-lg" id="rsvp">
 <div class="flex flex-col items-center justify-center text-center">
-<h2 class="text-olive dark:text-dusty-pink text-4xl font-serif font-bold leading-tight tracking-[-0.015em] mb-2">Will you be joining us?</h2>
-<p class="text-charcoal/80 dark:text-cream/80 mb-8 max-w-md">Please RSVP by September 1st, 2024. Click the button below to let us know if you'll be there!</p>
-<a class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-olive hover:bg-olive/90 text-white text-base font-bold leading-normal transition-colors" href="https://forms.google.com" rel="noopener noreferrer" target="_blank">
-                                    RSVP Now
-                                </a>
+<h3 class="text-gold dark:text-dusty-pink text-3xl font-serif font-bold leading-tight tracking-[-0.015em] pb-8 pt-5 text-center">Adakah anda akan menyertai kami?</h3>
+<p class="text-black/80 dark:text-cream/80 mb-8 max-w-md">Diminta respon sebelum 7 Disember 2025. Tekan butang di bawah untuk memberi respon anda!</p>
+<a class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-olive hover:bg-olive/90 text-white text-base font-bold leading-normal transition-colors" href="https://forms.google.com" rel="noopener noreferrer" target="_blank">Beri respon</a>
 </div>
 </div>
 </div>
