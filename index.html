@@ -19,6 +19,29 @@
         font-family: 'Playfair Display', serif;
       }
     </style>
+<style>
+        /* Remove default margin and padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Position the audio player at the top-right */
+        .audio-container {
+            position: fixed;
+            top: 10px;   /* Distance from the top */
+            right: 10px; /* Distance from the right */
+            width: 120px; /* Set width to make it small */
+            height: 30px; /* Set height to make it small */
+            z-index: 9999; /* Ensure it stays on top */
+        }
+
+        audio {
+            width: 100%; /* Make audio player fit the container */
+            height: 100%;
+        }
+    </style>
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
@@ -46,9 +69,18 @@
     </script>
 </head>
 <body class="bg-cream dark:bg-background-dark font-display text-charcoal dark:text-cream">
-<div class="flex min-h-screen flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4 sm:min-h-[600px] sm:p-6 md:min-h-[800px] md:p-8"
-     data-alt="Background image"
-     style="background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url('bg_cream_flower.png');">
+<div class="flex min-h-screen flex-col gap-6 
+            bg-cover bg-center bg-no-repeat bg-fixed
+            @[480px]:gap-8 @[480px]:rounded-xl 
+            items-center justify-center 
+            p-4 sm:min-h-[600px] sm:p-6 md:min-h-[800px] md:p-8"
+     	    data-alt="Background image"
+            style="background-image: 
+            linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%),
+            url('bg_cream_flower.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;">
 <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
 <div class="layout-container flex h-full grow flex-col">
 <div class="flex flex-1 justify-center">
@@ -71,6 +103,14 @@
   </div>
 </div>
 <div class="py-10">
+<div class="audio-container">
+        <audio controls autoplay>
+            <source src="DQ8_Strange World.ogg" type="audio/ogg">
+  	    <source src="DQ8_Strange World.mp3" type="audio/mpeg">
+            <source src="DQ8_Strange World.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+</div>
 <p class="text-gold dark:text-cream/90 text-6xl font-normal leading-relaxed pb-3 pt-1 px-4 text-center max-w-3xl mx-auto">السلام عليكم</p>
 <p class="text-black dark:text-cream/90 text-lg font-normal leading-relaxed pb-3 pt-1 px-4 text-center max-w-3xl mx-auto">Dengan sukacitanya, kami ingin menjemput anda ke majlis pernikahan kami. Kehadiran dan doa anda adalah penyeri majlis kami.</p>
 </div>
@@ -125,7 +165,7 @@
 <div class="w-[1.5px] bg-dusty-pink h-4 grow"></div>
 </div>
 <div class="flex flex-1 flex-col py-3">
-<p class="text-dark-gold dark:text-cream/90 text-base font-medium leading-normal">Minum Petang</p>
+<p class="text-dark-gold dark:text-cream/90 text-base font-medium leading-normal">Jamuan Petang</p>
 <p class="text-black dark:text-dusty-pink/80 text-base font-normal leading-normal">4:00 PM</p>
 </div>
 <div class="flex flex-col items-center gap-1 pb-3">
@@ -133,7 +173,7 @@
 <span class="material-symbols-outlined text-dark-gold dark:text-dusty-pink">home</span>
 </div>
 <div class="flex flex-1 flex-col py-3">
-<p class="text-dark-gold dark:text-cream/90 text-base font-medium leading-normal">Bersurai</p>
+<p class="text-dark-gold dark:text-cream/90 text-base font-medium leading-normal">Majlis Berakhir / Tamat</p>
 <p class="text-black dark:text-dusty-pink/80 text-base font-normal leading-normal">6:00 PM</p>
 </div>
 </div>
@@ -144,7 +184,7 @@
 <div class="flex flex-col items-center justify-center text-center">
 <h3 class="text-gold dark:text-dusty-pink text-3xl font-serif font-bold leading-tight tracking-[-0.015em] pb-8 pt-5 text-center">Adakah anda akan menyertai kami?</h3>
 <p class="text-black/80 dark:text-cream/80 mb-8 max-w-md">Diminta respon sebelum 7 Disember 2025. Tekan butang di bawah untuk memberi respon anda!</p>
-<a class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-olive hover:bg-olive/90 text-white text-base font-bold leading-normal transition-colors" href="https://forms.google.com" rel="noopener noreferrer" target="_blank">Beri respon</a>
+<a class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-olive hover:bg-olive/90 text-white text-base font-bold leading-normal transition-colors" href="https://forms.google.com" rel="noopener noreferrer" target="_blank">RSVP</a>
 </div>
 </div>
 </div>
