@@ -32,7 +32,7 @@
             position: fixed;
             top: 1px;   /* Distance from the top */
             right: 1px; /* Distance from the right */
-            width: 150px; /* Set width to make it small */
+            width: 100px; /* Set width to make it small */
             height: 20px; /* Set height to make it small */
             z-index: 9999; /* Ensure it stays on top */
         }
@@ -56,7 +56,8 @@
               "charcoal": "#AC34B3",
               "cream": "#F5F5DC",
 	      "gold": "#FDBE02",
-	      "dark-gold": "#E6AB00"
+	      "dark-gold": "#E6AB00",
+	      "soft-pink": "#FDAEDC"
             },
             fontFamily: {
               "display": ["Plus Jakarta Sans", "sans-serif"],
@@ -105,8 +106,8 @@
 <div class="py-10">
 <div class="audio-container">
         <audio controls autoplay>
-            <source src="DQ8_Strange World.ogg" type="audio/ogg">
-  	    <source src="DQ8_Strange World.mp3" type="audio/mpeg">
+            <source src="Strange World.ogg" type="audio/ogg">
+  	    <source src="Strange World.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
 </div>
@@ -133,16 +134,21 @@
 <div class="bg-white/70 dark:bg-black/20 p-6 rounded-lg shadow-sm">
 <div class="flex items-center gap-3 mb-2">
 <span class="material-symbols-outlined text-dark-gold dark:text-dusty-pink">location_on</span>
-<h4 class="text-dark-gold dark:text-cream/90 text-lg font-bold">Tempat</h4>
+<h4 class="text-dark-gold dark:text-cream/90 text-lg font-bold">Lokasi & Arah</h4>
 </div>
-<p class="text-black dark:text-dusty-pink/100">Masjid Raja Haji Fi Sabilillah</p>
+<p class="text-black dark:text-dusty-pink/100">Tingkat 1, Masjid Raja Haji Fi Sabilillah</p>
 <p class="text-black dark:text-dusty-pink/80">Persiaran Semarak Api, Cyberjaya, Selangor.</p>
+<br>
+<p class="text-black dark:text-dusty-pink/80">Waze:</p>
 <a href="https://waze.com/ul/hw2829jdhb" target="_blank">
   <div class="w-[50px] h-[50px] bg-cover bg-center bg-no-repeat flex items-center justify-center text-center"
        style="background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url('qr.png');" 
        data-alt="waze qr">
   </div>
 </a>
+<br>
+<p class="text-black dark:text-dusty-pink/80">Video: </p>
+<a href="https://shorturl.at/zXAub" target="_blank">Arah ke dewan nikah (tekan di sini)</a>
 </div>
 </div>
 <div>
@@ -182,5 +188,5 @@
 <div class="flex flex-col items-center justify-center text-center">
 <h3 class="text-gold dark:text-dusty-pink text-3xl font-serif font-bold leading-tight tracking-[-0.015em] pb-8 pt-5 text-center">Adakah anda akan menyertai kami?</h3>
 <p class="text-black/80 dark:text-cream/80 mb-8 max-w-md">Diminta respon sebelum 7 Disember 2025. Tekan butang di bawah untuk memberi respon anda!</p>
-<a class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-olive hover:bg-olive/90 text-white text-base font-bold leading-normal transition-colors" href="https://forms.google.com" rel="noopener noreferrer" target="_blank">RSVP</a>
+<a class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-olive hover:bg-olive/90 text-white text-base font-bold leading-normal transition-colors" href="https://forms.gle/jSBXRUNMvoSd7FXK7" rel="noopener noreferrer" target="_blank">RSVP</a>
 </body></html>
